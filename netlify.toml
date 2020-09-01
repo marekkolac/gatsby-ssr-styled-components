@@ -1,0 +1,33 @@
+# HEADERS
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex nofollow"
+    Dickus = "TEMP_VARIABLE"
+
+[build]
+  command = "sed -i 's/TEMP_VARIABLE/noindex nofollow/g' netlify.toml && gatsby build"
+
+[context.production]
+  environment = { GATSBY_API_URL = "prod" }
+  command = "sed -i 's/TEMP_VARIABLE/allow all/g' netlify.toml && gatsby build"
+
+# [context.master]
+#   environment = { GATSBY_API_URL = "master", GATSBY_TEST = TEMP_VARIABLE }
+#   command = "echo 'building master' && sed -i s/TEMP_VARIABLE/'suck dick'/g && gatsby build"
+
+[context.staging]
+  environment = { GATSBY_API_URL = "staging" }
+
+[context.dev]
+  environment = { GATSBY_API_URL = "dev"}
+
+[[redirects]]
+  from = "/*"
+  to = "/error404"
+  status = 404
+
+[[redirects]]
+  from = "/*"
+  to = "/error500"
+  status = 500
