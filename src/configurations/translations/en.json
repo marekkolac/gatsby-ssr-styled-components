@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "testPage": {
+      "seo": {
+        "title": "Lorem ipsum dolor sit amet",
+        "url": "/test-page",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum viverra neque eu lobortis. Nullam ultrices dapibus ex, fermentum nullam sodales."
+      },
+      "menu": "#MENU#default"
+    },
+    "homepage": {
+      "seo": {
+        "title": "Lorem ipsum dolor sit amet",
+        "url": "/",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum viverra neque eu lobortis. Nullam ultrices dapibus ex, fermentum nullam sodales."
+      },
+      "h1": "test example"
+    }
+  },
+  "apps": {
+    "admin": {}
+  },
+  "menus": {
+    "default": {
+      "testPage": "Test PAGE",
+      "testPage2": "Testing page 2"
+    }
+  }
+}

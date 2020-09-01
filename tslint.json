@@ -1,0 +1,17 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "quotemark": [true, "single", "jsx-double", "avoid-escape"],
+    "semicolon": false,
+    "interface-name": [true, "always-prefix"],
+    "eofline": false,
+    "ordered-imports": false,
+    "indent": [true, "spaces", 2],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "object-literal-sort-keys": false,
+    "no-empty-interface": false,
+    "curly": false,
+    "only-arrow-functions": false,
+    "no-shadowed-variable": false
+  }
+}
